@@ -22,7 +22,7 @@ impl ImageFish {
 impl eframe::App for ImageFish {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         egui::CentralPanel::default().show(ctx, |ui| {
-            // ui.heading("Image Fish");
+            ui.heading("Image Fish");
 
             if ui.button("Select Images").clicked() {
                 self.files = rfd::FileDialog::new()
